@@ -26,15 +26,19 @@ class LinkedList:
             self.end.add(Node(value))
             self.end = self.end.nextn
         self.length += 1
+    
     def pop(self):
         if self.start == None or self.end == None:
             return
         else:
             traverser = self.start
-            while traverser.nextn != None and traverser.nextn.nextn != None:
-                traverser = traverser.nextn
-            traverser.remove()
-            self.end = traverser
+            if traverser.nextn == None:
+                self.start = self.end = None
+            else:
+                while traverser.nextn.nextn != None:
+                    traverser = traverser.nextn
+                traverser.remove()
+                self.end = traverser
     
     def __repr__(self):
         s = "["
@@ -48,6 +52,11 @@ class LinkedList:
 list1 = LinkedList()
 list1.push(1)
 list1.push(2)
+print(list1)
 list1.pop()
+print(list1)
 list1.push(3)
+print(list1)
+list1.pop()
+list1.pop()
 print(list1)
