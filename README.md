@@ -5,7 +5,7 @@ A python script that does the following:
 2. Inserts each cell value in Inkscape SVG
 3. Renders a PDF for each cell value
 
-Stack
+###Stack
 1. Python
 2. Inkscape
 3. PDF Reader
