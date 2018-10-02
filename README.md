@@ -8,4 +8,3 @@ A python script that does the following:
 ### Stack
 1. Python
 2. Inkscape
-3. PDF Reader
