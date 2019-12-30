@@ -8,3 +8,9 @@ A python script that does the following:
 ### Stack
 1. Python
 2. Inkscape
+
+
+## Steps to run:
+1. Download the script
+2. python bulkCreateSVGs.py <<source folder name>>
+3. Files will be processed and stored in the same folder. 
