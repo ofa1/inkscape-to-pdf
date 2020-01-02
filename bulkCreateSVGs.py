@@ -34,7 +34,7 @@ try:
         # Replace the target string
         currfile = sourcesvg.replace(textToSearchAndReplace, name)
         # Write the file out
-        with open(os.path.join(sourcefolder, output_folder) + "/" + name + '.svg', 'w') as file:
+        with open(os.path.join(sourcefolder, output_folder) + "/" + name + '.svg', 'w', encoding='utf-8') as file:
             file.write(currfile)
         os.chdir(os.path.join(sourcefolder, output_folder))
         os.system(f'inkscape --without-gui --export-pdf="'+ name + '.pdf" "'+ name + '.svg" --export-area-page')
